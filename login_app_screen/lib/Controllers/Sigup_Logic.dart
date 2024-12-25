@@ -24,7 +24,7 @@ class SigupController  extends GetxController{
 
   try {
     UserCredential userCredential = await  FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password) ;
-      Person newPerson = Person(name: name, title: name, imageUrl: "", createdAt: DateTime.now());
+      Person newPerson = Person(name: name, title: email, imageUrl: "", createdAt: DateTime.now());
       FirebaseFirestore.instance.collection("PersonTitle").doc(name).set(
         newPerson.toJson()
       );
