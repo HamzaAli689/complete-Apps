@@ -7,9 +7,8 @@ import 'package:login_app_screen/widgets/color.dart';
 import 'package:login_app_screen/widgets/signup_btn.dart';
 import 'package:login_app_screen/widgets/text_field.dart';
 
-
 class LoginScreen extends StatelessWidget {
-  final logic = Get.put(LoginController());
+  final LoginController logic = Get.put(LoginController());
 
   LoginScreen({super.key});
 
@@ -75,24 +74,28 @@ class LoginScreen extends StatelessWidget {
                           Myhint: 'example34@gmail.com',
                           Mylabel: 'E-mail',
                           hide: false,
-                          MyController: null,
+                          MyController: logic.emailController,
                         ),
                         Gap(15),
                         MyTextField(
                           Myhint: 'Password',
                           Mylabel: 'Password',
                           hide: true,
-                          MyController: null,
+                          MyController: logic.passwordController,
                         ),
                         Gap(20),
                         MyCustomBtn(
-                          title: 'Login', onTap: () {  },
+                          title: 'Login',
+                          onTap: () async {
+                            await logic.loginUser();
+                            print("User logged in successfully");
+                          },
                         ),
                         Gap(10),
                         MycustomeText(title: "Forget Password?"),
                         Gap(7),
                         InkWell(
-                          onTap: () {
+                          onTap: () async {
                             Get.toNamed("/signup");
                           },
                           child: Text(
