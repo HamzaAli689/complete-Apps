@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import '../constant/colors.dart';
 
@@ -12,6 +13,7 @@ class Homescreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               height: 50,
@@ -22,6 +24,30 @@ class Homescreen extends StatelessWidget {
               ),
               child: IconButton(onPressed: (){}, icon: Icon(Icons.dashboard,color: whiteSmoke,)),
             ),
+            Gap(20),
+            Row(
+              children: [
+                Text("Rent a Car",style: TextStyle(
+                  fontSize: 27,
+                  fontWeight: FontWeight.bold,
+                  color: whiteSmoke,
+                  letterSpacing: 1,
+                ),),
+                Gap(10),
+                Text("Anytime",style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.normal,
+                    color: gray,
+                  letterSpacing: 1,
+                ),),
+              ],
+            ),
+            Text("Anywhere",style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.normal,
+              color: gray,
+              letterSpacing: 1,
+            ),),
           ],
         ),
       ),
