@@ -48,6 +48,49 @@ class Homescreen extends StatelessWidget {
               color: gray,
               letterSpacing: 1,
             ),),
+            Gap(20),
+            Text("Brands",style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.normal,
+              color: gray,
+              letterSpacing: 1,
+            ),),
+            Gap(10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  height: 40,
+                  width: 40,
+                  decoration: BoxDecoration(
+                    color: fillcolor,
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Center(
+                    child: Text("All",style: TextStyle(
+                      color: whiteSmoke,
+                      letterSpacing: 1,
+                      fontSize: 15,
+                    ),),
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    color: fillcolor,
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Center(
+                    child: Text("All",style: TextStyle(
+                      color: whiteSmoke,
+                      letterSpacing: 1,
+                      fontSize: 15,
+                    ),),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
