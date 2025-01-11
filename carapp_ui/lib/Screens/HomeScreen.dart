@@ -8,8 +8,23 @@ class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: onyx,
-      body: Text("Hamza Ali"),
+      backgroundColor: backcolor,
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          children: [
+            Container(
+              height: 50,
+              width: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                border: Border.all(color: whiteSmoke)
+              ),
+              child: IconButton(onPressed: (){}, icon: Icon(Icons.dashboard,color: whiteSmoke,)),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
