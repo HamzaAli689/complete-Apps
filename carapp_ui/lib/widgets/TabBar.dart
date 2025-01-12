@@ -92,7 +92,7 @@ class Tabbar extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(50),
                                     border: Border.all(color: gray),
                                   ),
-                                  child:  Image.asset("assets/arrow.png"),
+                                  child:  Center(child: Image.asset("assets/arrow.png",height: 20,width: 20,)),
                                 ),
                               ],
                             ), 
