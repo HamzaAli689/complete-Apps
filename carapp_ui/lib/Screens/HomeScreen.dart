@@ -94,7 +94,6 @@ class Homescreen extends StatelessWidget {
               ),
             ),
             Gap(10),
-
             Tabbar(),
           ],
         ),

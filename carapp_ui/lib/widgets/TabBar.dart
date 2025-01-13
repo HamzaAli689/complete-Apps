@@ -31,6 +31,7 @@ class Tabbar extends StatelessWidget {
                 Tab(text: 'Different Drop-Off'),
               ],
             ),
+            Gap(10),
             Expanded(
               child: TabBarView(
                 children: [
@@ -45,15 +46,19 @@ class Tabbar extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Gap(20),
-                          LocationContainer(title: 'Pick-Up', subtitle: 'Dubai Airport',),
+                          Gap(10),
+                          LocationContainer(
+                            title: 'Pick-Up',
+                            subtitle: 'Dubai Airport',
+                          ),
                           Padding(
-                            padding: const EdgeInsets.all(20),
+                            padding: EdgeInsets.only(
+                                left: 20, right: 20, top: 5, bottom: 5),
                             child: Row(
                               children: [
                                 Expanded(
                                     child: Divider(
-                                  color: gray,
+                                  color: Colors.white,
                                   height: 1,
                                 )),
                                 Gap(3),
@@ -61,15 +66,30 @@ class Tabbar extends StatelessWidget {
                                   height: 40,
                                   width: 40,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    border: Border.all(color: gray),
-                                  ),
-                                  child:  Center(child: Image.asset("assets/arrow.png",height: 20,width: 20,)),
+                                      borderRadius: BorderRadius.circular(50),
+                                      color: Colors.white),
+                                  child: Center(
+                                      child: Image.asset(
+                                    "assets/arrow.png",
+                                    height: 20,
+                                    width: 20,
+                                  )),
                                 ),
                               ],
-                            ), 
+                            ),
                           ),
-                          LocationContainer(title: 'Drop-Off', subtitle: 'Dubia Silicon-Oasis',),
+                          LocationContainer(
+                            title: 'Drop-Off',
+                            subtitle: 'Dubai Silicon-Oasis',
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(20),
+                            child: Divider(
+                              color: Colors.white,
+                              height: 1,
+                            ),
+                          ),
+                          Gap(50),
                         ],
                       ),
                     ),
