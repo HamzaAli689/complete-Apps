@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../constant/colors.dart';
+import 'location_container.dart';
 
 class Tabbar extends StatelessWidget {
   const Tabbar({super.key});
@@ -16,7 +17,7 @@ class Tabbar extends StatelessWidget {
             TabBar(
               indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(25.0),
-                color: green,
+                color: Colors.white,
               ),
               labelColor: Colors.black,
               // Text color for the selected tab
@@ -40,41 +41,12 @@ class Tabbar extends StatelessWidget {
                           topLeft: Radius.circular(30),
                           topRight: Radius.circular(30),
                         ),
-                        color: whiteSmoke,
+                        color: fillcolor,
                       ),
                       child: Column(
                         children: [
                           Gap(20),
-                          ListTile(
-                            leading: Container(
-                              height: 40,
-                              width: 40,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                border: Border.all(color: gray),
-                              ),
-                              child: Icon(
-                                Icons.location_on_outlined,
-                                size: 30,
-                              ),
-                            ),
-                            title: Text(
-                              "Pick-Up",
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.normal,
-                                  color: gray),
-                            ),
-                            subtitle: Text(
-                              "Dubai Airport",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                letterSpacing: 1,
-                              ),
-                            ),
-                          ),
+                          LocationContainer(title: 'Pick-Up', subtitle: 'Dubai Airport',),
                           Padding(
                             padding: const EdgeInsets.all(20),
                             child: Row(
@@ -97,17 +69,7 @@ class Tabbar extends StatelessWidget {
                               ],
                             ), 
                           ),
-                          Gap(20),
-                          ListTile(
-                            leading: Container(
-                              height: 50,
-                              width: 50,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                border: Border.all(color: gray),
-                              ),
-                            ),
-                          ),
+                          LocationContainer(title: 'Drop-Off', subtitle: 'Dubia Silicon-Oasis',),
                         ],
                       ),
                     ),
