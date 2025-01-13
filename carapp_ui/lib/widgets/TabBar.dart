@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../constant/colors.dart';
+import 'Date_Container.dart';
 import 'location_container.dart';
 
 class Tabbar extends StatelessWidget {
@@ -82,11 +83,30 @@ class Tabbar extends StatelessWidget {
                             title: 'Drop-Off',
                             subtitle: 'Dubai Silicon-Oasis',
                           ),
+                          //Divider is here
                           Padding(
                             padding: EdgeInsets.all(20),
                             child: Divider(
                               color: Colors.white,
                               height: 1,
+                            ),
+                          ),
+                          DateContainer(),
+                          Gap(25),
+                          Container(
+                            height: MediaQuery.of(context).size.height * .08,
+                            width: MediaQuery.of(context).size.width * .70,
+                            decoration: BoxDecoration(
+                              color: green,
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                            child: Center(
+                              child: Text("Search Car",style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                                letterSpacing: 1,
+                                fontSize: 15,
+                              ),),
                             ),
                           ),
                           Gap(50),
