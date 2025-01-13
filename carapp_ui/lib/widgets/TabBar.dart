@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
+import 'package:get/get.dart';
+import '../Screens/SelectTheCar.dart';
 import '../constant/colors.dart';
 import 'Date_Container.dart';
 import 'location_container.dart';
@@ -93,20 +94,25 @@ class Tabbar extends StatelessWidget {
                           ),
                           DateContainer(),
                           Gap(25),
-                          Container(
-                            height: MediaQuery.of(context).size.height * .08,
-                            width: MediaQuery.of(context).size.width * .70,
-                            decoration: BoxDecoration(
-                              color: green,
-                              borderRadius: BorderRadius.circular(50),
-                            ),
-                            child: Center(
-                              child: Text("Search Car",style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
-                                letterSpacing: 1,
-                                fontSize: 15,
-                              ),),
+                          InkWell(
+                            onTap: (){
+                              Get.to(() => SelectTheCar());
+                            },
+                            child: Container(
+                              height: MediaQuery.of(context).size.height * .08,
+                              width: MediaQuery.of(context).size.width * .70,
+                              decoration: BoxDecoration(
+                                color: green,
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                              child: Center(
+                                child: Text("Search Car",style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  letterSpacing: 1,
+                                  fontSize: 15,
+                                ),),
+                              ),
                             ),
                           ),
                           Gap(50),
