@@ -65,54 +65,7 @@ class SelectTheCar extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30)
                 ),
               ),Gap(10),
-              Container(
-                height: size.height * .30,
-                width:  size.width,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)
-                ),
-              ),Gap(10),
-              Container(
-                height: size.height * .30,
-                width:  size.width,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)
-                ),
-              ),Gap(10),
-              Container(
-                height: size.height * .30,
-                width:  size.width,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)
-                ),
-              ),Gap(10),
-              Container(
-                height: size.height * .30,
-                width:  size.width,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)
-                ),
-              ),Gap(10),
-              Container(
-                height: size.height * .30,
-                width:  size.width,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)
-                ),
-              ),Gap(10),
-              Container(
-                height: size.height * .30,
-                width:  size.width,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)
-                ),
-              ),Gap(10),
+
             ],
           ),
         ),
