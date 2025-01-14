@@ -64,8 +64,46 @@ class SelectTheCar extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(30)
                 ),
+                child: Column(
+                  children: [
+                    Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20,),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 15,top: 15),
+                                child: Image.asset("assets/teslaBlack.png",width: 30,height: 30,),
+                              ),
+                              Gap(10),
+                              Row(
+                                children: [
+                                  Text("Tesla",style: TextStyle(
+                                    color: Colors.black,fontSize: 18,
+                                  ),),
+                                  Gap(5),
+                                  Text("Model",style: TextStyle(
+                                    color: Colors.black,fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                  ),),
+                                ],
+                              ),
+                              Gap(10),
+                              Text("S",style: TextStyle(
+                                color: Colors.black,fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                            ],
+                          ),
+                        ),
+                        Image.asset("assets/TeslaModelS.png")
+                      ],
+                    )
+                  ],
+                ),
               ),Gap(10),
-
             ],
           ),
         ),
