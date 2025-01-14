@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import '../constant/colors.dart';
 
@@ -7,22 +8,26 @@ class SelectTheCar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: backcolor,
       appBar: AppBar(
         backgroundColor: backcolor,
-        leading: Container(
-          height: 40,
-          width: 40,
-          decoration: BoxDecoration(
-            color: backcolor,
-            borderRadius: BorderRadius.circular(50),
-            border: Border.all(color: gray),
-          ),
-          child: Icon(
-            Icons.location_on_outlined,
-            color: Colors.white,
-            size: 30,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 5,top: 5),
+          child: Container(
+            height: 35,
+            width: 35,
+            decoration: BoxDecoration(
+              color: backcolor,
+              borderRadius: BorderRadius.circular(50),
+              border: Border.all(color: gray),
+            ),
+            child: Icon(
+              Icons.location_on_outlined,
+              color: Colors.white,
+              size: 27,
+            ),
           ),
         ),
         title: Column(
@@ -47,7 +52,70 @@ class SelectTheCar extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Column(
+      body: Padding(
+        padding: const EdgeInsets.all(15),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: size.height * .30,
+                width:  size.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30)
+                ),
+              ),Gap(10),
+              Container(
+                height: size.height * .30,
+                width:  size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)
+                ),
+              ),Gap(10),
+              Container(
+                height: size.height * .30,
+                width:  size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)
+                ),
+              ),Gap(10),
+              Container(
+                height: size.height * .30,
+                width:  size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)
+                ),
+              ),Gap(10),
+              Container(
+                height: size.height * .30,
+                width:  size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)
+                ),
+              ),Gap(10),
+              Container(
+                height: size.height * .30,
+                width:  size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)
+                ),
+              ),Gap(10),
+              Container(
+                height: size.height * .30,
+                width:  size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)
+                ),
+              ),Gap(10),
+            ],
+          ),
+        ),
       ),
     );
   }
