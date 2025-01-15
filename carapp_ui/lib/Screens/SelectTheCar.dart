@@ -57,11 +57,6 @@ class SelectTheCar extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Stack(
-                children: [
-
-                ],
-              ),
               Car_Container(imagePath: "assets/images/1.png", model: 'S',),
               Gap(10),
               Car_Container(imagePath: "assets/images/3.png", model: 'X',),
