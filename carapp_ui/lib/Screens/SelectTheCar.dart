@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../constant/colors.dart';
+import '../widgets/CarContainer.dart';
 import '../widgets/cardetailC.dart';
 
 class SelectTheCar extends StatelessWidget {
@@ -56,89 +57,11 @@ class SelectTheCar extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
-                height: size.height * .34,
-                width: size.width,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30)),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 20,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 15,),
-                                child: Image.asset(
-                                  "assets/teslaBlack.png",
-                                  width: 30,
-                                  height: 30,
-                                ),
-                              ),
-                              Gap(10),
-                              Row(
-                                children: [
-                                  Text(
-                                    "Tesla",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                                  Gap(5),
-                                  Text(
-                                    "Model",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Gap(10),
-                              Text(
-                                "S",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Image.asset(
-                          "assets/images/1.png",
-                          height: size.height * .25,
-                          width: size.width * .57,
-                        )
-                      ],
-                    ),
-                    Gap(10),
-                    Padding(
-                      padding:  EdgeInsets.only(left: 15,right: 15),
-                      child: Row(
-                        children: [
-                          Cardetailc(icon: Icons.airline_seat_recline_extra, detail: '5 Seat',),
-                          Gap(10),
-                          Cardetailc(icon: Icons.speed, detail: '149mph',),
-                          Gap(10),
-                          Cardetailc(icon: Icons.attach_money, detail: '380/Day',),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-              ),
+              Car_Container(imagePath: "assets/images/1.png", model: 'S',),
+              Gap(10),
+              Car_Container(imagePath: "assets/images/2.png", model: 'X',),
+              Gap(10),
+              Car_Container(imagePath: "assets/images/4.png", model: 'Y',),
               Gap(10),
             ],
           ),
