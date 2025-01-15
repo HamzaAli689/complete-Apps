@@ -57,7 +57,7 @@ class SelectTheCar extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                height: size.height * .33,
+                height: size.height * .34,
                 width: size.width,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -76,7 +76,7 @@ class SelectTheCar extends StatelessWidget {
                             children: [
                               Padding(
                                 padding:
-                                    const EdgeInsets.only(left: 15, top: 15),
+                                    const EdgeInsets.only(left: 15,),
                                 child: Image.asset(
                                   "assets/teslaBlack.png",
                                   width: 30,
@@ -119,7 +119,7 @@ class SelectTheCar extends StatelessWidget {
                         Image.asset(
                           "assets/images/1.png",
                           height: size.height * .25,
-                          width: size.width * .45,
+                          width: size.width * .57,
                         )
                       ],
                     ),
@@ -131,8 +131,8 @@ class SelectTheCar extends StatelessWidget {
                           Cardetailc(icon: Icons.airline_seat_recline_extra, detail: '5 Seat',),
                           Gap(10),
                           Cardetailc(icon: Icons.speed, detail: '149mph',),
-                          Gap(50),
-                          Cardetailc(icon: Icons.attach_money, detail: '380/D',),
+                          Gap(10),
+                          Cardetailc(icon: Icons.attach_money, detail: '380/Day',),
                         ],
                       ),
                     )
