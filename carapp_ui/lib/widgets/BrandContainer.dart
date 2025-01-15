@@ -6,12 +6,13 @@ import '../constant/colors.dart';
 class BrandContainer extends StatelessWidget {
    final   String label;
     final  String? assetPath;
-  const BrandContainer({super.key, required this.label, this.assetPath});
+    final VoidCallback ontap;
+  const BrandContainer({super.key, required this.label, this.assetPath, required this.ontap});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){},
+      onTap: ontap,
       child: Container(
         height: 40,
         width: label == "All" ? 40 : 120,

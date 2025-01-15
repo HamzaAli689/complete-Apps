@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 
 import '../constant/colors.dart';
 import '../widgets/BrandContainer.dart';
-import '../widgets/TabBar.dart'; // Ensure this file exists with necessary color constants.
+import '../widgets/TabBar.dart';
+import 'SelectTheCar.dart'; // Ensure this file exists with necessary color constants.
 
 class Homescreen extends StatelessWidget {
   const Homescreen({super.key});
@@ -81,19 +83,21 @@ class Homescreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  BrandContainer(label: 'All', ),
+                  BrandContainer(label: 'All', ontap: () {  }, ),
                   Gap(10),
-                  BrandContainer(assetPath: "assets/tesla.png", label: 'Tesla',),
+                  BrandContainer(assetPath: "assets/tesla.png", label: 'Tesla', ontap: () {
+                   Get.to(() => SelectTheCar(),transition: Transition.rightToLeftWithFade,duration: Duration(seconds: 1));
+                  },),
                   Gap(10),
-                  BrandContainer(label:"BMW",assetPath: "assets/bmw.png"),
+                  BrandContainer(label:"BMW",assetPath: "assets/bmw.png", ontap: () {  },),
                   Gap(10),
-                  BrandContainer(label:"Ferrari",assetPath: "assets/ferrari.png"),
+                  BrandContainer(label:"Ferrari",assetPath: "assets/ferrari.png", ontap: () {  },),
                   Gap(10),
-                  BrandContainer(label:"Mercedes",assetPath: "assets/merscdees.png"),
+                  BrandContainer(label:"Mercedes",assetPath: "assets/merscdees.png", ontap: () {  },),
                   Gap(10),
-                  BrandContainer(assetPath: "assets/tesla.png", label: 'Tesla',),
+                  BrandContainer(assetPath: "assets/tesla.png", label: 'Tesla', ontap: () {  },),
                   Gap(10),
-                  BrandContainer(label:"BMW",assetPath: "assets/bmw.png"),
+                  BrandContainer(label:"BMW",assetPath: "assets/bmw.png", ontap: () {  },),
                 ],
               ),
             ),
