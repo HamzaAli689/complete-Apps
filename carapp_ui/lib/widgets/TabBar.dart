@@ -93,7 +93,7 @@ class Tabbar extends StatelessWidget {
                             ),
                           ),
                           DateContainer(),
-                          Gap(25),
+                          Gap(50),
                           InkWell(
                             onTap: (){
                               Get.to(() => SelectTheCar());
