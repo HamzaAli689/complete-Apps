@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../constant/colors.dart';
+import '../widgets/cardetailC.dart';
 
 class SelectTheCar extends StatelessWidget {
   const SelectTheCar({super.key});
@@ -127,25 +128,11 @@ class SelectTheCar extends StatelessWidget {
                       padding:  EdgeInsets.only(left: 15,right: 15),
                       child: Row(
                         children: [
-                          Container(
-                            height: 37,
-                            width: 90,
-                            decoration: BoxDecoration(
-                              color: gray,
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(4.0),
-                              child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Icon(Icons.airline_seat_recline_extra_sharp,color: Colors.white,),
-                                  Text("5 Seat",style: TextStyle(
-                                    color: Colors.white,fontSize: 16,
-                                  ),)
-                                ],
-                              ),
-                            ),
-                          )
+                          Cardetailc(icon: Icons.airline_seat_recline_extra, detail: '5 Seat',),
+                          Gap(10),
+                          Cardetailc(icon: Icons.speed, detail: '149mph',),
+                          Gap(50),
+                          Cardetailc(icon: Icons.attach_money, detail: '380/D',),
                         ],
                       ),
                     )
