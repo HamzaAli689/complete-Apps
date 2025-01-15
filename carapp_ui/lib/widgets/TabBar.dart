@@ -44,7 +44,7 @@ class Tabbar extends StatelessWidget {
                           topLeft: Radius.circular(30),
                           topRight: Radius.circular(30),
                         ),
-                        color: fillcolor,
+                        color: whiteSmoke,
                       ),
                       child: Column(
                         children: [
@@ -60,7 +60,7 @@ class Tabbar extends StatelessWidget {
                               children: [
                                 Expanded(
                                     child: Divider(
-                                  color: Colors.white,
+                                  color: gray,
                                   height: 1,
                                 )),
                                 Gap(3),
@@ -69,7 +69,7 @@ class Tabbar extends StatelessWidget {
                                   width: 40,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(50),
-                                      color: Colors.white),
+                                      border: Border.all(color: gray)),
                                   child: Center(
                                       child: Image.asset(
                                     "assets/arrow.png",
@@ -88,15 +88,17 @@ class Tabbar extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(20),
                             child: Divider(
-                              color: Colors.white,
+                              color: gray,
                               height: 1,
                             ),
                           ),
                           DateContainer(),
                           Gap(50),
                           InkWell(
-                            onTap: (){
-                              Get.to(() => SelectTheCar());
+                            onTap: () {
+                              Get.to(() => SelectTheCar(),
+                                  transition: Transition.rightToLeftWithFade,
+                                  duration: Duration(seconds: 1));
                             },
                             child: Container(
                               height: MediaQuery.of(context).size.height * .08,
@@ -106,12 +108,15 @@ class Tabbar extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(50),
                               ),
                               child: Center(
-                                child: Text("Search Car",style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black,
-                                  letterSpacing: 1,
-                                  fontSize: 15,
-                                ),),
+                                child: Text(
+                                  "Search Car",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                    letterSpacing: 1,
+                                    fontSize: 15,
+                                  ),
+                                ),
                               ),
                             ),
                           ),

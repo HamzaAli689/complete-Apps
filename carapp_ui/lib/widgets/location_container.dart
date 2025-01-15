@@ -19,7 +19,7 @@ class LocationContainer extends StatelessWidget {
         ),
         child: Icon(
           Icons.location_on_outlined,
-          color: Colors.white,
+          color: Colors.black,
           size: 30,
         ),
       ),
@@ -35,7 +35,7 @@ class LocationContainer extends StatelessWidget {
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.bold,
-          color: Colors.white,
+          color: Colors.black,
           letterSpacing: 1,
         ),
       ),
