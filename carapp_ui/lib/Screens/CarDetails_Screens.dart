@@ -34,6 +34,22 @@ class CardetailsScreens extends StatelessWidget {
           letterSpacing: 1,
         ),),
         centerTitle: true,
+        actions: [
+          Container(
+            height: 50,
+            width: 50,
+            decoration: BoxDecoration(
+              color: backcolor,
+              borderRadius: BorderRadius.circular(50),
+              border: Border.all(color: gray),
+            ),
+            child: Icon(
+              Icons.favorite_border_outlined,
+              color: Colors.white,
+              size: 30,
+            ),
+          ),
+        ],
       ),
     );
   }
