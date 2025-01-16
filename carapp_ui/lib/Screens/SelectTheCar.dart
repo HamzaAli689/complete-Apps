@@ -18,17 +18,17 @@ class SelectTheCar extends StatelessWidget {
         leading: Padding(
           padding: const EdgeInsets.only(left: 5, top: 5),
           child: Container(
-            height: 35,
-            width: 35,
+            height: 30,
+            width: 30,
             decoration: BoxDecoration(
               color: backcolor,
               borderRadius: BorderRadius.circular(50),
               border: Border.all(color: gray),
             ),
             child: Icon(
-              Icons.location_on_outlined,
+              Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
-              size: 27,
+              size: 25,
             ),
           ),
         ),
