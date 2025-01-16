@@ -37,7 +37,7 @@ class SelectTheCar extends StatelessWidget {
             Text(
               "Dubai Airport",
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 22,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
                 letterSpacing: 1,
