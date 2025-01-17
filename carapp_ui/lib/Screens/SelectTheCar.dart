@@ -28,7 +28,7 @@ class SelectTheCar extends StatelessWidget {
             child: Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
-              size: 25,
+              size: 20,
             ),
           ),
         ),
