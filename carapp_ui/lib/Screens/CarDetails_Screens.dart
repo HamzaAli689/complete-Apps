@@ -36,8 +36,8 @@ class CardetailsScreens extends StatelessWidget {
         centerTitle: true,
         actions: [
           Container(
-            height: 50,
-            width: 50,
+            height: 40,
+            width: 40,
             decoration: BoxDecoration(
               color: backcolor,
               borderRadius: BorderRadius.circular(50),
@@ -46,7 +46,7 @@ class CardetailsScreens extends StatelessWidget {
             child: Icon(
               Icons.favorite_border_outlined,
               color: Colors.white,
-              size: 30,
+              size: 20,
             ),
           ),
         ],
