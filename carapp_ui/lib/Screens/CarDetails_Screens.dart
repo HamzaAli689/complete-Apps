@@ -13,8 +13,8 @@ class CardetailsScreens extends StatelessWidget {
         leading: Padding(
           padding: const EdgeInsets.only(left: 5, top: 5),
           child: Container(
-            height: 30,
-            width: 30,
+            height: 40,
+            width: 40,
             decoration: BoxDecoration(
               color: backcolor,
               borderRadius: BorderRadius.circular(50),
@@ -23,7 +23,7 @@ class CardetailsScreens extends StatelessWidget {
             child: Icon(
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
-              size: 25,
+              size: 20,
             ),
           ),
         ),
