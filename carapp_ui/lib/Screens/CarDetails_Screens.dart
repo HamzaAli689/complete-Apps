@@ -7,16 +7,25 @@ class CardetailsScreens extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: backcolor,
+    return Scaffold(
+      backgroundColor: backcolor,
       appBar: AppBar(
         backgroundColor: backcolor,
-        leading: Icon(Icons.arrow_back_ios_new_outlined,color: Colors.white,size: 20,),
-        title: Text("Car Details",style: TextStyle(
-          fontSize: 22,
-          fontWeight: FontWeight.bold,
+        leading: Container(
+            child: Icon(
+          Icons.arrow_back_ios_new_outlined,
           color: Colors.white,
-          letterSpacing: 1,
-        ),),
+          size: 20,
+        )),
+        title: Text(
+          "Car Details",
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            letterSpacing: 1,
+          ),
+        ),
         centerTitle: true,
         actions: [
           Container(
