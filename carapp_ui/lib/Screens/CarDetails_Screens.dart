@@ -44,6 +44,22 @@ class CardetailsScreens extends StatelessWidget {
           ),
         ],
       ),
+      body: Column(
+        children: [
+          Container(width: 300,
+          height: 300,
+          color: Colors.green,),
+          Stack(alignment: Alignment.topRight,
+            children: [
+              Container(
+              height: 200,
+                width: 200,
+                color: Colors.red,
+            )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
