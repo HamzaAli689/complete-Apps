@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constant/colors.dart';
+import '../widgets/CarBaseStand.dart';
 
 class CardetailsScreens extends StatelessWidget {
   const CardetailsScreens({super.key});
@@ -46,18 +47,7 @@ class CardetailsScreens extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Container(width: 300,
-          height: 300,
-          color: Colors.green,),
-          Stack(alignment: Alignment.topRight,
-            children: [
-              Container(
-              height: 200,
-                width: 200,
-                color: Colors.red,
-            )
-            ],
-          )
+          CarShowcase(),
         ],
       ),
     );
