@@ -10,23 +10,7 @@ class CardetailsScreens extends StatelessWidget {
     return Scaffold(backgroundColor: backcolor,
       appBar: AppBar(
         backgroundColor: backcolor,
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 5, top: 5),
-          child: Container(
-            height: 40,
-            width: 40,
-            decoration: BoxDecoration(
-              color: backcolor,
-              borderRadius: BorderRadius.circular(50),
-              border: Border.all(color: gray),
-            ),
-            child: Icon(
-              Icons.arrow_back_ios_new_rounded,
-              color: Colors.white,
-              size: 20,
-            ),
-          ),
-        ),
+        leading: Icon(Icons.arrow_back_ios_new_outlined,color: Colors.white,size: 20,),
         title: Text("Car Details",style: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.bold,
