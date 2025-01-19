@@ -11,10 +11,11 @@ class CarShowcase extends StatelessWidget {
 
             // Circular Container (Base Stand)
             Container(
-              width: 300,
-              height: 150, // Slightly elliptical
+              width: MediaQuery.of(context).size.width * .75,
+              height: 100, // Slightly elliptical
               decoration: BoxDecoration(
                 color: Colors.grey[900],
+                    
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
