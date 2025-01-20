@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../constant/colors.dart';
-import '../widgets/CarBaseStand.dart';
 
 class CardetailsScreens extends StatelessWidget {
   const CardetailsScreens({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: backcolor,
       appBar: AppBar(
@@ -47,7 +47,16 @@ class CardetailsScreens extends StatelessWidget {
       ),
       body: Column(
         children: [
-          CarShowcase(),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              height: size.height * .50,
+              width: size.width,
+              decoration: BoxDecoration(
+                color: whiteSmoke
+              ),
+            ),
+          )
         ],
       ),
     );
