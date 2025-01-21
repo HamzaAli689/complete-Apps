@@ -6,7 +6,9 @@ import 'cardetailC.dart';
 class Car_Container extends StatelessWidget {
   final String imagePath;
   final String model;
-  const Car_Container({super.key, required this.imagePath, required this.model});
+  final VoidCallback ontap;
+  final String speed;
+  const Car_Container({super.key, required this.imagePath, required this.model, required this.ontap, required this.speed});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +16,7 @@ class Car_Container extends StatelessWidget {
     return  Card(
       elevation: 2,
       child: InkWell(
-        onTap: (){
-
-        },
+        onTap: ontap,
         child: Container(
           height: size.height * .34,
           width: size.width,
@@ -91,7 +91,7 @@ class Car_Container extends StatelessWidget {
                   children: [
                     Cardetailc(icon: Icons.airline_seat_recline_extra, detail: '5 Seat',),
                     Gap(10),
-                    Cardetailc(icon: Icons.speed, detail: '149mph',),
+                    Cardetailc(icon: Icons.speed, detail: speed,),
                     Gap(10),
                     Cardetailc(icon: Icons.attach_money, detail: '380/Day',),
                   ],

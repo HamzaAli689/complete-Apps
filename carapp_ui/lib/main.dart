@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      // home:  Homescreen(),
+       home:  Homescreen(),
       //home:  SelectTheCar(),
-      home:  CardetailsScreens(),
+      //home:  CardetailsScreens(),
     );
   }
 }
