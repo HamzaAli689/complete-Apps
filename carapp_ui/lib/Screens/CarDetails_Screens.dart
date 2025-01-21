@@ -45,19 +45,35 @@ class CardetailsScreens extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Container(
-              height: size.height * .50,
-              width: size.width,
-              decoration: BoxDecoration(
-                color: whiteSmoke
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                height: size.height * .40,
+                width: size.width,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(300),
+                  color: whiteSmoke,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Image.asset(
+                    "assets/images/1.png",
+                  ),
+                )
               ),
             ),
-          )
-        ],
+            Container(
+              height: size.height,
+              width: size.width,
+              decoration: BoxDecoration(
+                color: fillcolor
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
