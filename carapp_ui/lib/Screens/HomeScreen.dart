@@ -37,23 +37,27 @@ class Homescreen extends StatelessWidget {
             Gap(20),
             Row(
               children: [
-                Text(
-                  "Rent a Car",
-                  style: TextStyle(
-                    fontSize: 27,
-                    fontWeight: FontWeight.bold,
-                    color: whiteSmoke,
-                    letterSpacing: 1,
+                FittedBox(
+                  child: Text(
+                    "Rent a Car",
+                    style: TextStyle(
+                      fontSize: 27,
+                      fontWeight: FontWeight.bold,
+                      color: whiteSmoke,
+                      letterSpacing: 1,
+                    ),
                   ),
                 ),
                 Gap(10),
-                Text(
-                  "Anytime",
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.normal,
-                    color: gray,
-                    letterSpacing: 1,
+                FittedBox(
+                  child: Text(
+                    "Anytime",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.normal,
+                      color: gray,
+                      letterSpacing: 1,
+                    ),
                   ),
                 ),
               ],
